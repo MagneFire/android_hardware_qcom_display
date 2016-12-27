@@ -35,7 +35,7 @@ ifeq ($(call is-board-platform-in-list, msm8974 msm8226 msm8610 apq8084 \
 endif
 ifeq ($(call is-board-platform-in-list, msm8909), true)
     common_flags += -DVENUS_COLOR_FORMAT
-    common_flags += -DMDSS_TARGET
+#     common_flags += -DMDSS_TARGET
 endif
 
 common_deps  :=
@@ -45,7 +45,6 @@ kernel_includes :=
 ifeq ($(TARGET_USES_QCOM_BSP),true)
 # Enable QCOM Display features
     common_flags += -DQTI_BSP
-    common_includes += vendor/qcom/opensource/display-frameworks/include
 endif
 ifneq ($(call is-platform-sdk-version-at-least,18),true)
     common_flags += -DANDROID_JELLYBEAN_MR1=1

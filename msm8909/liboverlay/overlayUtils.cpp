@@ -37,6 +37,7 @@
 #include "mdpWrapper.h"
 #include "mdp_version.h"
 #include <hardware/hwcomposer_defs.h>
+#include <hardware/display_defs.h>
 
 // just a helper static thingy
 namespace {
