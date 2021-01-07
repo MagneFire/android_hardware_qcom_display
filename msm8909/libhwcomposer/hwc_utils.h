@@ -49,7 +49,7 @@
 #define MAX_PTOR_LAYERS 2
 
 #ifdef QTI_BSP
-#include <exhwcomposer_defs.h>
+#include <hardware/hwcomposer_defs.h>
 #endif
 
 //Fwrd decls
