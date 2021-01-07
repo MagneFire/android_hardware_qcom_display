@@ -65,3 +65,4 @@ ifeq ($(call is-vendor-board-platform,QCOM),true)
 endif
 
 common_clang_flags := true
+kernel_includes += $(LOCAL_PATH)/../../../msm8x09/kernel-headers/
